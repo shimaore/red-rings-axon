@@ -40,6 +40,7 @@ We are copying the filtering code from `Axon/sockets/sub` because we need one st
 
     module.exports = RedRingAxon
     Axon = require 'axon'
+    most = require 'most'
 
 This code is from axon/sockets/sub.js
 
