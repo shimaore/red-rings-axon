@@ -1,6 +1,6 @@
 {
   "name": "red-rings-axon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Axon transport for red-rings (backend)",
   "main": "index.js",
   "scripts": {
