@@ -35,3 +35,4 @@ Messages from the clients to the bus.
     {operation,has_key} = require 'abrasive-ducks-transducers'
     {SUBSCRIBE} = require 'red-rings/operations'
     Axon = require 'axon'
+    most = require 'most'
