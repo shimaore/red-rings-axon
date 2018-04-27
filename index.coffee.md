@@ -15,7 +15,7 @@ This client is meant to be embedded in a backend application such as `huge-play`
         @pub = Axon.socket 'pub'
         options.publish_to?.forEach (o) => @pub.connect o
         @sub = Axon.socket 'sub'
-        options.subcribe_to?.forEach (o) => @sub.connect o
+        options.subscribe_to?.forEach (o) => @sub.connect o
         return
 
       disconnect: ->
