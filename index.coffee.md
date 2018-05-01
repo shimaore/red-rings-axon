@@ -31,12 +31,13 @@ Messages from the bus to the client.
 
       source_of: (key) ->
 
-We are copying the filtering code from `Axon/sockets/sub` because we need one stream per pattern, not one stream that might have any number of patterns.
+We are copying the filtering code from `Axon/sockets/sub` because we need one stream per pattern, not one stream that might have any number of patterns,
+and that having one connection per pattern would be inefficient as well.
 
         key = toRegExp key
         most
         .fromEvent 'message', @sub
-        .filter (msg) -> msg.key.match key
+        .filter (msg) -> msg.key?.match key
 
     module.exports = RedRingAxon
     Axon = require 'axon'
