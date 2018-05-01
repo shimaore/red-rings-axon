@@ -37,7 +37,7 @@ and that having one connection per pattern would be inefficient as well.
         key = toRegExp key
         most
         .fromEvent 'message', @sub
-        .filter (msg) -> msg.key?.match key
+        .filter (msg) -> typeof msg.key is 'string' and msg.key.match key
 
     module.exports = RedRingAxon
     Axon = require 'axon'
