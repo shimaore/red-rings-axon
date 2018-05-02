@@ -18,11 +18,6 @@ Messages from the bus to the clients.
         .continueWith ->
           pub.close()
           most.empty()
-        .filter has_key
-
-Note: filtering for `SUBSCRIBE` is an early optimization that might be removed. Client code should not rely on it (and should still dispatch based on the operation).
-
-        .filter operation SUBSCRIBE
         .forEach (msg) ->
           pub.send msg
 
@@ -32,7 +27,5 @@ Messages from the clients to the bus.
         .fromEvent 'message', sub
 
     module.exports = axon_backend
-    {operation,has_key} = require 'abrasive-ducks-transducers'
-    {SUBSCRIBE} = require 'red-rings/operations'
     Axon = require 'axon'
     most = require 'most'
