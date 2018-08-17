@@ -20,6 +20,7 @@ Messages from the bus to the clients.
           most.empty()
         .forEach (msg) ->
           pub.send msg
+        .catch console.error
 
 Messages from the clients to the bus.
 
