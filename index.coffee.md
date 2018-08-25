@@ -13,8 +13,10 @@ This client is meant to be embedded in a backend application such as `huge-play`
       constructor: (options) ->
         super()
         @pub = Axon.socket 'pub'
+        @pub.on 'error', (error) -> yes
         options.publish_to?.forEach (o) => @pub.connect o
         @sub = Axon.socket 'sub'
+        @sub.on 'error', (error) -> yes
         options.subscribe_to?.forEach (o) => @sub.connect o
         return
 
