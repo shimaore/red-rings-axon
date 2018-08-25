@@ -45,7 +45,7 @@ and that having one connection per pattern would be inefficient as well.
           false
 
     module.exports = RedRingAxon
-    Axon = require 'axon'
+    Axon = require '@shimaore/axon'
     most = require 'most'
 
 This code is from axon/sockets/sub.js
