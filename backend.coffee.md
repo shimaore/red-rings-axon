@@ -28,5 +28,5 @@ Messages from the clients to the bus.
         .fromEvent 'message', sub
 
     module.exports = axon_backend
-    Axon = require 'axon'
+    Axon = require '@shimaore/axon'
     most = require 'most'
