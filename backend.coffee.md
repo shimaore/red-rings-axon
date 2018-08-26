@@ -5,7 +5,9 @@ This backend is meant to be integrated in an abrasive-ducks project or similar.
 
     axon_backend = (options) ->
       pub = Axon.socket 'pub'
+      pub.on 'error', (error) -> yes
       sub = Axon.socket 'sub'
+      sub.on 'error', (error) -> yes
 
       pub.bind options.pub
       sub.bind options.sub
