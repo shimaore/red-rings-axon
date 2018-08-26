@@ -20,7 +20,7 @@
   "author": "Stéphane Alnet <stephane@shimaore.net>",
   "license": "Unlicense",
   "dependencies": {
-    "@shimaore/axon": "^3.4.2",
+    "@shimaore/axon": "^3.4.3",
     "escape-regexp": "0.0.1",
     "most": "^1.7.3",
     "red-rings": "^2.0.0"
