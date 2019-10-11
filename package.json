@@ -20,13 +20,13 @@
   "author": "Stéphane Alnet <stephane@shimaore.net>",
   "license": "Unlicense",
   "dependencies": {
-    "@shimaore/axon": "^3.4.4",
+    "@shimaore/axon": "^3.5.0",
     "escape-regexp": "0.0.1",
     "most": "^1.7.3",
-    "red-rings": "^2.0.0"
+    "red-rings": "^2.1.0"
   },
   "devDependencies": {
     "coffeescript": "^2.3.0",
-    "mocha": "^5.1.1"
+    "mocha": "^6.2.0"
   }
 }
